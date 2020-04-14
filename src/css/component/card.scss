@@ -30,8 +30,8 @@
         bottom: -30px;
         left: 20px;
     }
-    &__tag{
-        visibility: hidden;
+    &__tage{
+        display: hidden;
     }
 
     &__title{
@@ -46,6 +46,60 @@
         }
         p{
             color: rgb(51, 45, 45);
+        }
+    }
+
+    @include MQ(M){
+        &__image--shape{
+            flex-direction: column;
+            height:500px;
+        }
+        &__personimage{
+       
+            width: 180px;
+            height: 180px;
+            position: relative;
+            bottom: -30px;
+            left: 50%;
+            margin-left: -80px;
+        }
+        &__tage{
+            display: hidden;
+        }
+    
+        &__title{
+            text-align: center;
+            position: relative;
+            bottom: -30px;
+            top: 60%;
+            left: 0%;
+            margin-left: -100px;
+        }
+        
+    }
+    @include MQ(S){
+        &__image--shape{
+            flex-direction: column;
+            height:500px;
+        }
+        &__personimage{
+       
+            width: 180px;
+            height: 180px;
+            position: relative;
+            bottom: -30px;
+            
+        }
+        &__tage{
+            display: hidden;
+        }
+    
+        &__title{
+            text-align: center;
+            position: relative;
+            bottom: -30px;
+            top: 60%;
+            
         }
     }
 }

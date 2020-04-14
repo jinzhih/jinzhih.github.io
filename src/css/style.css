@@ -367,6 +367,16 @@ template {
   z-index: 2;
 }
 
+@media only screen and (max-width: 768px) {
+  .row {
+    height: 800px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .row {
+    height: 800px;
+  }
+}
 .card {
   display: flex;
   flex-direction: column;
@@ -393,8 +403,8 @@ template {
   bottom: -30px;
   left: 20px;
 }
-.card__tag {
-  visibility: hidden;
+.card__tage {
+  display: hidden;
 }
 .card__title {
   color: white;
@@ -409,6 +419,52 @@ template {
 }
 .card__body p {
   color: #332d2d;
+}
+@media only screen and (max-width: 768px) {
+  .card__image--shape {
+    flex-direction: column;
+    height: 500px;
+  }
+  .card__personimage {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    bottom: -30px;
+    left: 50%;
+    margin-left: -80px;
+  }
+  .card__tage {
+    display: hidden;
+  }
+  .card__title {
+    text-align: center;
+    position: relative;
+    bottom: -30px;
+    top: 60%;
+    left: 0%;
+    margin-left: -100px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .card__image--shape {
+    flex-direction: column;
+    height: 500px;
+  }
+  .card__personimage {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    bottom: -30px;
+  }
+  .card__tage {
+    display: hidden;
+  }
+  .card__title {
+    text-align: center;
+    position: relative;
+    bottom: -30px;
+    top: 60%;
+  }
 }
 
 .navigation {

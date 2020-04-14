@@ -27,3 +27,17 @@
     position: relative;
     z-index: 2
 }
+@include MQ(M){
+    .row{
+
+        height: 800px;
+    }
+
+}
+
+@include MQ(S){
+    .row{
+
+        height: 800px;
+    }
+}
