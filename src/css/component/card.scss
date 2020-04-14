@@ -1,7 +1,7 @@
 .card{
     display: flex;
     flex-direction: column;
-    width: $cardWidth;
+    width: 100%;
 
     &__image--shape{
         height: 200px;
@@ -9,6 +9,10 @@
         z-index: 0;
         position: relative;
         display: flex;
+        background-image: url(/img/sp_main_bg.png);
+        background-size: cover;
+        background-position: center;
+
        
     }
  
@@ -24,13 +28,16 @@
         height: 180px;
         position: relative;
         bottom: -30px;
-        left: -400px;
+        left: 20px;
     }
+    &__tag{
+        visibility: hidden;
+    }
+
     &__title{
-        position: relative;
-        top: 30px;
-        right: 280px;
-        color: white;
+       color: white;
+       flex: 1;
+       text-align: center;
     }
     &__body{
         flex:1;
