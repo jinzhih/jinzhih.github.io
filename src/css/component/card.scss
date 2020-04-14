@@ -40,7 +40,11 @@
        text-align: center;
     }
     &__body{
-        flex:1;
+        background-color: whitesmoke;
+        flex: 1;
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
         h3{
             font-size: 24px;
         }
@@ -48,6 +52,34 @@
             color: rgb(51, 45, 45);
         }
     }
+    &__aboutme{
+        
+        width: 50%;
+        
+    }
+    &__information{
+        width: 50%;
+        flex: 1;
+    }
+
+    .infor_list{
+        list-style: none;
+    }
+    .infor_list li{
+        
+        text-align: left;
+    }
+    .infor_list .title{
+        display: inline-block;
+        width: 50px;
+        margin-right: 30px;
+        
+    }
+    .infor_list .value{
+        display: inline-block;
+        color: rgb(53, 47, 47);
+    }
+
 
     @include MQ(M){
         &__image--shape{
@@ -75,6 +107,24 @@
             left: 0%;
             margin-left: -100px;
         }
+        &__body{
+            flex-direction: column;
+
+        }
+
+        &__aboutme{
+        
+            width: 100%;
+            
+        }
+        &__information{
+            width: 100%;
+            flex: 1;
+        }
+
+        .infor_list{
+            padding: 0;
+        }
         
     }
     @include MQ(S){
@@ -100,6 +150,24 @@
             bottom: -30px;
             top: 60%;
             
+        }
+
+        &__body{
+            flex-direction: column;
+
+        }
+
+        &__aboutme{
+        
+            width: 100%;
+            
+        }
+        &__information{
+            width: 100%;
+            flex: 1;
+        }
+        .infor_list{
+            padding: 0;
         }
     }
 }

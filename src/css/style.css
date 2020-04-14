@@ -361,6 +361,7 @@ template {
 }
 
 .row {
+  width: 100%;
   display: flex;
   flex-direction: row;
   position: relative;
@@ -412,13 +413,39 @@ template {
   text-align: center;
 }
 .card__body {
+  background-color: whitesmoke;
   flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
 }
 .card__body h3 {
   font-size: 24px;
 }
 .card__body p {
   color: #332d2d;
+}
+.card__aboutme {
+  width: 50%;
+}
+.card__information {
+  width: 50%;
+  flex: 1;
+}
+.card .infor_list {
+  list-style: none;
+}
+.card .infor_list li {
+  text-align: left;
+}
+.card .infor_list .title {
+  display: inline-block;
+  width: 50px;
+  margin-right: 30px;
+}
+.card .infor_list .value {
+  display: inline-block;
+  color: #352f2f;
 }
 @media only screen and (max-width: 768px) {
   .card__image--shape {
@@ -444,6 +471,19 @@ template {
     left: 0%;
     margin-left: -100px;
   }
+  .card__body {
+    flex-direction: column;
+  }
+  .card__aboutme {
+    width: 100%;
+  }
+  .card__information {
+    width: 100%;
+    flex: 1;
+  }
+  .card .infor_list {
+    padding: 0;
+  }
 }
 @media only screen and (max-width: 576px) {
   .card__image--shape {
@@ -464,6 +504,19 @@ template {
     position: relative;
     bottom: -30px;
     top: 60%;
+  }
+  .card__body {
+    flex-direction: column;
+  }
+  .card__aboutme {
+    width: 100%;
+  }
+  .card__information {
+    width: 100%;
+    flex: 1;
+  }
+  .card .infor_list {
+    padding: 0;
   }
 }
 

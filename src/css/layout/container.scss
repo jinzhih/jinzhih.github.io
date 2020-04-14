@@ -22,10 +22,12 @@
     }
 }
 .row{
+    width: 100%;
     display: flex;
     flex-direction: row;
     position: relative;
     z-index: 2
+    
 }
 @include MQ(M){
     .row{
