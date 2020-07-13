@@ -36,9 +36,16 @@
 
     &__title{
        color: white;
-       flex: 1;
+       
        text-align: center;
+       &--big{
+        font-size: 40px;
+       }
     }
+
+  
+    
+
     &__body{
         background-color: whitesmoke;
         flex: 1;
@@ -106,6 +113,9 @@
             top: 60%;
             left: 0%;
             margin-left: -100px;
+            &--big{
+                font-size: 40px;
+               }
         }
         &__body{
             flex-direction: column;
@@ -149,6 +159,9 @@
             position: relative;
             bottom: -30px;
             top: 60%;
+            &--big{
+                font-size: 40px;
+               }
             
         }
 
@@ -170,4 +183,7 @@
             padding: 0;
         }
     }
+}
+li:hover{
+   color: gray;
 }
